@@ -1,0 +1,272 @@
+.main {
+  display: flex;
+  gap: 90px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+.header__logo{
+  font-size: 20px;
+  font-weight: 400;
+}
+.header__right {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__right button{
+  background-color: #F2F2F2B2;
+  border: none;
+  height: 30px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.header__right button p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.header__text__input {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header__text__input img {
+  position: absolute;
+  padding-left: 3px;
+}
+
+.header__text__input input {
+  width: 350px;
+  padding-left: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #BCBCBC;
+  outline: none;
+}
+
+.header__text__input input::placeholder {
+  color: #BCBCBC;
+  font-size: 16px;
+}
+
+.label__description {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main__left__buttons {
+  padding-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+
+}
+
+.main__left__buttons__left {
+  border: 1px solid #BCBCBC;
+  width: 110px;
+  height: 30px;
+  background: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.main__right {
+  width: 100%;
+}
+
+.main__left__buttons__right {
+  border: 1px solid #BCBCBC;
+  width: 130px;
+  height: 30px;
+  background: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.main__right__properties {
+
+}
+
+.main__right__properties__header {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main__right__properties__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #BCBCBC;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.main__right__properties__head__right {
+  display: flex;
+  align-items: center;
+}
+
+.main__right__column__item {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main__right__column__item__right {
+  display: flex;
+}
+
+.main__right__column__item__right__first {
+  width: 210px;
+  text-align: left;
+}
+
+.main__right__column__item__right__second {
+  width: 180px;
+  text-align: left;
+
+}
+
+.comlumn__item__text {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+.main__right__description {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.main__right__input {
+  padding-left: 10px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 75px;
+  border: 1px solid #BCBCBC;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 16px;
+  text-align: start;
+}
+
+.main__right__footer {
+  padding-top: 30px;
+  width: 40%;
+}
+.main__right__footer__logo{
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.main__right__footer__head {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #BCBCBC;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.main__right__footer__head h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main__right__column {
+  border-bottom: 1px solid #BCBCBC;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.main__right__footer__column__item {
+  display: flex;
+  gap: 15px;
+}
+
+.main__right__footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid #BCBCBC;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+
+.custom-checkbox {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.switcher-input {
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+.custom-checkbox::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="radio"]:checked + .custom-checkbox::after {
+  opacity: 1;
+}
+
+label {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.main__right__properties__head__name{
+  font-size: 16px;
+}

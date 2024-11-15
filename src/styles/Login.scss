@@ -1,0 +1,86 @@
+.login_page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_page_main{
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.login_popup{
+  box-sizing: border-box;
+  padding: 0 50px 20px 50px ;
+  background-color: #FBFBFB;
+  width: 550px;
+  border-radius: 5px;
+  border: 1px #BCBCBC;
+  font-family: 'Roboto', sans-serif;
+
+}
+.login_popup__inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login_popup_logo{
+  color: #292222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+label{
+  font-weight: 400;
+  font-size: 16px;
+}
+label span{
+  color: red;
+}
+.input{
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #BCBCBC;
+}
+.error .input {
+  border: 1px solid red;
+}
+.error-message {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: red;
+  font-size: 12px;
+}
+.login_popup__inputs__input{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.login_popup__inputs__input__item{
+  position: relative;
+}
+.login_popup__inputs__input__eye{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+.login__popup__bottom{
+  padding-top: 40px;
+}
+.login__popup__bottom__still{
+  padding: 5px;
+  width: 100%;
+  background: none;
+  border: 1px solid #BCBCBC;
+}
+.login_popup__inputs__input {
+  position: relative;
+}

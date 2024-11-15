@@ -1,0 +1,56 @@
+.rc-tree {
+  max-width: 400px;
+  width: 400px;
+}
+
+.myCls .rc-tree-title {
+  display: flex;
+  align-items: center;
+}
+
+.rc-tree .rc-tree-treenode span.rc-tree-switcher {
+  background: none;
+  width: unset;
+  height: unset;
+
+  .switcher {
+    display: flex;
+    margin-right: 16px;
+
+    .switcher-icon {
+      background: none;
+      outline: none;
+      border: none;
+    }
+  }
+}
+
+.rc-tree-treenode-switcher-open .switcher-icon {
+  transform: rotate(-90deg);
+}
+
+
+.rc-tree-switcher,
+.rc-tree-icon {
+  display: none;
+}
+
+.rc-tree .rc-tree-treenode span.rc-tree-checkbox, .rc-tree .rc-tree-treenode span.rc-tree-iconEle {
+  background-image: none;
+  display: none;
+}
+
+.rc-tree .rc-tree-treenode .rc-tree-node-content-wrapper {
+  height: unset;
+}
+
+.rc-tree .rc-tree-treenode {
+  white-space: normal;
+  display: flex;
+  align-items: center;
+}
+
+.rc-tree-title {
+  display: inline-flex;
+}
+
