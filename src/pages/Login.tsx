@@ -71,7 +71,7 @@ const Login: React.FC<null> = () => {
 			});
 			console.log(data);
 			localStorage.setItem('token', data.login.token);
-			navigate('/');
+			navigate('/main');
 		} catch (error) {
 			console.error('Ошибка при авторизации:', error);
 			alert('Ошибка при авторизации. Проверьте логин и пароль.');

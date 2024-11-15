@@ -6,15 +6,20 @@ import {
 } from 'react-router-dom';
 import Login from './pages/Login.tsx';
 import Dashboard from './pages/Dashboard.tsx';
+import ProtectedRoute from './components/protetctedRote.tsx';
 
 export const router = createBrowserRouter([
 	{
-		path: '/login',
+		path: '/',
 		element: <Login/>,
 	},
 	{
-		path: '/',
-		element: <Dashboard/>,
+		path: '/main',
+		element: (
+			<ProtectedRoute>
+				<Dashboard />
+			</ProtectedRoute>
+		),
 	},
 ]);
 
